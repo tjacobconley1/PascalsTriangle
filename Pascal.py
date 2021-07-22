@@ -38,6 +38,5 @@ for i in range(scale):
 
 print(pascalgrid)
 
-i = 0
 
 
