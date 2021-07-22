@@ -22,11 +22,19 @@
 import numpy as np
 import math
 
+# iteration variables
+i = 0
+j = 0
+
 # array size scaler
 scale = int(input("how many iterations? ->"))
 
 # create blank array of size 'scale'
 pascalgrid = np.zeros((scale, scale))
+
+for i in range(scale):
+    for j in range(scale):
+        pascalgrid[i][j] = ((i + j)^scale)
 
 print(pascalgrid)
 
